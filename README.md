@@ -1,0 +1,1 @@
+In this project I have made a very simple web page which is responsive using html and css.

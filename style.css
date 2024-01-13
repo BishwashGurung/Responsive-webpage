@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.nav{
+    height: 100px;
+    width: 100%;
+    border-bottom: 2px solid #dadada;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4vw;
+}
+
+.nav-part2{
+    display: flex;
+    gap: 4vw;
+    align-items: center;
+}
+
+.nav h2{
+    font-size: 2.5vw;
+    font-weight: 700;
+}
+
+.nav h4{
+    font-size: 2.1vw;
+}
+
+.nav button{
+    font-size: 1.5vw;
+    padding: 0.9vh 1.9vh;
+    background-color: #555A6E;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.nav i{
+    font-weight: 800;
+    display: none;
+}
+
+.content{
+    height: calc(100% - 100px);
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.left{
+    height: 100%;
+    width: 55%;
+    padding: 7vw 4vw;
+}
+
+.left h1{
+    font-size: 4vw;
+    line-height: 4.3vw;
+}
+
+.left h1 span{
+    color: #FF6D7A;
+}
+
+.left p{
+    font-size: 2vw;
+    font-weight: 600;
+    color: #666;
+    width: 80%;
+    margin-top: 2.5vh;
+    margin-bottom: 3.5vh;
+}
+
+.content button{
+    font-size: 2vw;
+    padding: 1.3vh 2.3vh;
+    background-color: #FF6D7A;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.right{
+    height: 100%;
+    width: 45%;
+}
+
+.right img{
+    height: 100%;
+    width: 100%;
+}
+
+@media (max-width:600px){
+    .nav{
+        background-color: #FF6D7A;
+        color: white;
+        padding: 0 4vw;
+        gap: 3vw;
+        height: 65px;
+    }
+    .nav h2{
+        font-size: 6vw;
+    }
+    .nav h4{
+        font-size: 4vw;
+        display: none;
+    }
+    .nav button{
+        display: none;
+    }
+    .nav i{
+        display: block;
+        font-size: 5vw;
+    }
+    .content{
+        height: calc(100% - 65px);
+        width: 100%;
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+        height: 40%;
+    }
+    .left h1{
+        font-size: 6vw;
+        line-height: 6.5vw;
+    }
+    .left p{
+        font-size: 3vw;
+        width: 90%;
+        margin-top: 2vw;
+        margin-bottom: 2.5vw;
+    }
+    .left button{
+        padding: 2vw 4vw;
+        font-size: 2vw;
+        font-weight: 600;
+    }
+    .right{
+        width:100%;
+        height:60%;
+    }
+}
